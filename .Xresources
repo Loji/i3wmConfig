@@ -1,0 +1,124 @@
+! urxvt 
+
+URxvt*scrollTtyOutput: false
+URxvt*scrollWithBuffer: true
+URxvt*scrollTtyKeypress: true
+
+URxvt*font: -*-terminus-medium-*-*-*-14-*-*-*-*-*-iso10646-1
+URxvt.color12: rgb:5c/5c/ff
+
+URxvt.perl-ext-common: default,matcher,selection-to-clipboard
+URxvt.url-launcher: /usr/bin/xdg-open
+URxvt.matcher.button: 1
+
+
+URxvt*geometry:  120x44
+URxvt*loginShell:  true
+URxvt*scrollBar:  false
+URxvt*fading:  15
+URxvt*visualBell:  true
+
+urxvt*dynamicColors: on
+
+! special
+*.foreground:   #a2a2a2
+*.background:   #282828
+*.cursorColor:  #a2a2a2
+
+! black
+*.color0:       #555555
+*.color8:       #888888
+
+! red
+*.color1:       #9c3528
+*.color9:       #d64937
+
+! green
+*.color2:       #61bc3b
+*.color10:      #86df5d
+
+! yellow
+*.color3:       #f3b43a
+*.color11:      #fdd75a
+
+! blue
+*.color4:       #0d68a8
+*.color12:      #0f75bd
+
+! magenta
+*.color5:       #744560
+*.color13:      #9e5e83
+
+! cyan
+*.color6:       #288e9c
+*.color14:      #37c3d6
+
+! white
+*.color7:       #a2a2a2
+*.color15:      #f9f9f9
+
+!rofi 
+rofi.modi:                           window,run,ssh
+rofi.opacity:                        100
+rofi.width:                          50
+rofi.lines:                          15
+rofi.columns:                        1
+rofi.font:			     terminus 14 
+rofi.color-enabled:                  true
+rofi.color-window: argb:ee333333, #476382, #476382
+rofi.color-normal: argb:0000000, #888888, argb:11ffffff, #2c2c2c, #476382
+rofi.color-active: argb:0000000, #ad9365, argb:5ffffff, #ad9365, #333333
+rofi.color-urgent: argb:0000000, #c78165, argb:5ffffff, #c78165, #333333
+
+
+rofi.bw:                             0
+rofi.location:                       0
+rofi.padding:                        5 
+rofi.yoffset:                        0
+rofi.xoffset:                        0
+
+rofi.fixed-num-lines:                true
+rofi.terminal:                       urxvt
+rofi.ssh-client:                     ssh
+rofi.ssh-command:                    {terminal} -e {ssh-client} {host}
+rofi.run-command:                    {cmd}
+rofi.run-list-command:
+rofi.run-shell-command:              {terminal} -e {cmd}
+rofi.disable-history:                false
+rofi.levenshtein-sort:               false
+rofi.case-sensitive:                 false
+rofi.sidebar-mode:                   false
+
+rofi.fuzzy:                          false
+rofi.glob:                           false
+rofi.regex:                          false
+
+rofi.line-margin:                    2
+rofi.separator-style:                solid
+rofi.hide-scrollbar:                 false
+rofi.fullscreen:                     false
+rofi.scrollbar-width:                8 
+! Scrolling method. (0: Page, 1: Centered)
+rofi.scroll-method:                  0
+
+
+
+
+
+!Xterm
+xterm*termName: xterm-256color
+XTerm*locale: true
+XTerm*metaSendsEscape: true
+Xterm*saveLines: 4096
+
+!XTerm*font: -*-terminus-medium-*-*-*-13-*-*-*-*-*-iso10646-1
+!xterm*faceName:    xft:Terminus:size=13
+!XTerm*faceName:             xft:Droid Sans Monostyle=Regular:size=8
+!xterm*font: -*-terminus-medium-*-*-*-12-*-*-*-*-*-*-iso8859-2
+XTerm*font: -*-terminus-medium-*-*-*-14-*-*-*-*-*-iso10646-1
+xterm*charClass: 33:48,36-47:48,58-59:48,61:48,63-64:48,95:48,126:48
+Xterm*utf8: 1
+xterm*bellIsUrgent: true
+!*xterm*selemtToClipBoard: true
+
+XTerm*VT100.translations: #override <Btn1Up>: select-end(PRIMARY, CLIPBOARD, CUT_BUFFER0)
